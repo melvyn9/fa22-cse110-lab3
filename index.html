@@ -90,7 +90,31 @@
 
         <!--Form-->
         <div>
-            
+            <form>
+                <fieldset>
+                    <legend>Introuduction Survey</legend>
+                    <label for="first">First Name: </label>
+                    <input type="text" id="first" name="firstName">
+                    <label for="last">Last Name: </label>
+                    <input type="text" id="last" name="lastName">
+                    <label for="ages">Choose your age from the list:</label>
+                    <input list="ages" id="age" name="age">
+                    <datalist id="ages">
+                        <option value="Young">
+                        <option value="Mature">
+                        <option value="Old">
+                    </datalist>
+                    <label for="gender">Choose your gender:</label>
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <label for="message">Leave a message:</label>
+                    <textarea name="message" rows="5" cols="50">Begin typing here</textarea>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
         </div>
     </main>
     <footer>
