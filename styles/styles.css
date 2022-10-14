@@ -1,0 +1,51 @@
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --secondaryColor: MediumSeaGreen;
+    --bodyColor: #EFFFFA;
+    --fontColor: hsl(300,4,14);
+    --headerColor: rgb(0,153,51);
+    
+    /* Font Sizes */
+}
+
+/* Custom Font */
+@font-face {
+    font-family: myFont;
+    src: url(FuzzyBubbles-Regular.ttf);
+}
+
+/* General Styling */
+/* Body */
+body {
+    font-family: myFont;
+    background-color: var(--secondaryColor);
+}
+
+/* Header */
+header {
+    background-color: var(--headerColor);
+}
+
+/* Main */
+main {
+    margin: 5%;
+    background-color: var(--bodyColor);
+}
+
+/* Footer */
+footer {
+    background-color: var(--headerColor);
+}
+
+/* Lists */
+li {
+    padding: 1%;
+    margin-left: 20px;
+}
