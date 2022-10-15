@@ -35,7 +35,10 @@ header {
 
 /* Main */
 main {
-    margin: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
     background-color: var(--bodyColor);
 }
 
@@ -81,3 +84,99 @@ nav > ul{
     background-color: var(--linkColor);
 }
 
+.nav_item a:active {
+    background-color: var(--secondaryColor);
+}
+
+/* Main Styling */
+main {
+    border-style: solid;
+    border-radius: 5%;
+    border-color: var(--headerColor);
+    border-width: thick;
+    padding: 3%;
+}
+
+img {
+    min-width: 5cm;
+    min-height: 25mm;
+    max-width: 10cm;
+    max-height: 50mm;
+}
+
+#main_info {
+    display: block;
+}
+
+/* Using Grids for Sections of Main */
+.main_grid {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 6;
+    gap: 1rem;
+}
+
+/* Attendance List */
+.grid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* Unfinished Business */
+.grid2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid4 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grid6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grid7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.grid8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+.grid9 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
