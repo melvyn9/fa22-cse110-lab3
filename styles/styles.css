@@ -1,7 +1,7 @@
 /* Normalize */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 /* Variables */
@@ -35,7 +35,10 @@ header {
 
 /* Main */
 main {
-    margin: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
     background-color: var(--bodyColor);
 }
 
@@ -46,7 +49,10 @@ footer {
 
 /* Lists */
 li {
-    padding: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
     margin-left: 20px;
 }
 
@@ -81,3 +87,119 @@ nav > ul{
     background-color: var(--linkColor);
 }
 
+.nav_item a:active {
+    background-color: var(--secondaryColor);
+}
+
+/* Main Styling */
+main {
+    border-style: solid;
+    border-color: var(--headerColor);
+    border-width: thick;
+    border-radius: 5%;
+    padding: 3% 3% 3% 3%;
+}
+
+img {
+    min-width: 5cm;
+    min-height: 25mm;
+    max-width: 10cm;
+    max-height: 50mm;
+    margin: auto;
+}
+
+/* Testing display: none property */
+#hidden_content {
+    display: none;
+}
+
+#main_info {
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* Using Grids for Sections of Main */
+.main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 5;
+    gap: 1ex;
+}
+
+.main_grid section {
+    border: solid var(--headerColor);
+    border-radius: 2%;
+    text-align: center;
+    padding: 1vmax;
+}
+/* Attendance List */
+#grid1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* Unfinished Business */
+#grid2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/* Things To Go Through */
+#grid3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* Drawing Models */
+#grid4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* Information About Project */
+#grid5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* To Do List */
+#grid6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* Potential Problems */
+#grid7 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* Recording */
+#grid8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/* Audio */
+#grid9 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
