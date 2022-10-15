@@ -202,4 +202,11 @@ img {
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+    margin: auto;
+}
+
+/* Audio Video Styling */
+audio, video {
+    max-width: 10cm;
+    max-height: 5cm;
 }
