@@ -281,3 +281,59 @@ input[type=text] {
 #footer_nav > li {
     list-style: none;
 }
+
+/* Media Query for Phone View */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    /* General Styling to suit phone */
+    * {
+        font-size: 10px;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    main {
+        margin: 5% 0 0 0;
+    }
+
+    img {
+        max-width: 50%;
+    }
+
+    /* Setting nav to flex column */
+    header {
+        position: static;
+    }
+    
+    nav > ul{
+        flex-direction: column;
+    }
+
+    /* Setting main content to flex column */
+    div.main_grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea + button {
+        position: static;
+     }
+
+     audio, video {
+        max-width: 50%;
+        max-height: 50%;
+     }
+
+     /* Setting fotter to flex column */
+     footer {
+        margin-top: 5%;
+     }
+
+     #footer_nav {
+        flex-direction: column;
+     }
+}
