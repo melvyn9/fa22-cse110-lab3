@@ -11,7 +11,7 @@
     --bodyColor: #EFFFFA;
     --fontColor: hsl(300,4,14);
     --headerColor: rgb(0,153,51);
-    --linkColor: #A755C2;
+    --linkColor: #D5F9DE;
     /* Font Sizes */
 }
 
@@ -48,7 +48,6 @@ footer {
 li {
     padding: 1%;
     margin-left: 20px;
-    text-align: center;
 }
 
 /* Header Development Branch */
@@ -69,10 +68,16 @@ nav > ul{
     list-style: none;
 }
 
+.nav_item {
+    text-align: center;
+} 
+
 .nav_item a {
     text-decoration: none;
+    background-color: var(--fontColor);
 }
 
 .nav_item a:hover {
     background-color: var(--linkColor);
 }
+
