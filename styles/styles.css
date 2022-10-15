@@ -11,7 +11,7 @@
     --bodyColor: #EFFFFA;
     --fontColor: hsl(300,4,14);
     --headerColor: rgb(0,153,51);
-    
+    --linkColor: #D5F9DE;
     /* Font Sizes */
 }
 
@@ -49,3 +49,35 @@ li {
     padding: 1%;
     margin-left: 20px;
 }
+
+/* Header Development Branch */
+/* Title Styling */
+#title {
+    text-align: center;
+}
+
+#meeting {
+    text-align: center;
+}
+
+/* NavBar Styling */
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav_item {
+    text-align: center;
+} 
+
+.nav_item a {
+    text-decoration: none;
+    background-color: var(--fontColor);
+}
+
+.nav_item a:hover {
+    background-color: var(--linkColor);
+}
+
