@@ -119,7 +119,7 @@ img {
 }
 
 /* Using Grids for Sections of Main */
-.main_grid {
+div.main_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 5;
@@ -215,3 +215,35 @@ video {
     width: 7.5cm;
     height: 5cm;
 }
+
+/* Form Styling */
+form {
+    margin-top: 2%;
+}
+form > * {
+    padding: 2%;
+}
+
+[attribute=form_border] {
+    border-color: var(--headerColor);
+}
+
+legend > * {
+    background-color: var(--fontColor);
+}
+
+legend ~ label {
+    font-weight: bold;
+}
+
+input[type=text] {
+    padding: 2%;
+    margin: 2% 2% 2% 0;
+ }
+
+ textarea + button {
+    padding: 2%;
+    border-radius: 50%;
+    border-color: var(--headerColor);
+    background-color: transparent;
+ }
