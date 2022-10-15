@@ -210,3 +210,8 @@ audio, video {
     max-width: 10cm;
     max-height: 5cm;
 }
+
+video {
+    width: 7.5cm;
+    height: 5cm;
+}
