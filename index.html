@@ -29,23 +29,26 @@
     <!-- Main Content-->
     <main>
         <!--Meeting notes content-->
+        <section id="hidden_content">
+            <p>I am experiementing with the display: none property</p>
+        </section>
         <section id="main_info">
             <p>This meeting will cover the <b>logistics</b> regarding the new project.
                 The deadline for the project is <strong>December 12th 2022</strong>.</p>
         </section>
 
         <div class="main_grid">
-            <section class="grid1">
+            <section id="grid1" class="grid_item">
                 <h3 id="attendance">Attendance List</h3>
                 <p>Melvyn, Paul, Thomas and Zachary</p>
             </section>
 
-            <section class="grid2">
+            <section id="grid2" class="grid_item">
                 <h3 id="unfinished">Unfinished Business From Last Meeting</h3>
                 <p>None</p>
             </section>
 
-            <section class="grid3">
+            <section id="grid3" class="grid_item">
                 <h3 id="go">Things To Go Through</h3>
                 <ul>
                     <li>Information about the new project</li>
@@ -56,7 +59,13 @@
                 </ul>
             </section>
 
-            <section class="grid4">
+            <section id="grid4" class="grid_item">
+                <h3 id="models">Drawings/Models Presented</h3>
+                <img src="money.jpg" alt="money model" width="500" height="350">
+            </section>
+
+
+            <section id="grid5" class="grid_item">
                 <h3 id="info">Information About The Project</h3>
                 <p>We have been tasked to create a CRUD application for a pizza company to store their customers data.
                     The client is <b>UCSD Pizza Inc</b>, I have attached some information about them below. 
@@ -70,7 +79,7 @@
                 </details>
             </section>
 
-            <section class="grid5">
+            <section id="grid6" class="grid_item">
                 <h3 id="todo">To Do List For Future Meeting</h3>
                 <ol>
                     <li>Decide time for future meetings</li>
@@ -79,7 +88,7 @@
                 </ol>
             </section>
 
-            <section class="grid6">
+            <section id="grid7" class="grid_item">
                 <h3 id="problems">Potential Problems And Comments</h3>
                 <ol>
                     <li>Small budget</li>
@@ -87,21 +96,18 @@
                     <li>Other project deadlines</li>
                 </ol>
             </section>
-            
-            <section class="grid7">
-                <h3 id="models">Drawings/Models Presented</h3>
-                <img src="money.jpg" alt="money model" width="500" height="350">
-            </section>
+        
 
-            <section class="grid8">
-                <h3 id="recording">Video and Audio Recording of Meeting</h3>
+            <section id="grid8" class="grid_item">
+                <h3 id="recording">Video Recording</h3>
                 <video controls>
                     <source src="MelvynVideo.mp4" type="video/mp4">
                     <strong>Your browser does not support the video tag</strong>
                 </video>
             </section>
 
-            <section class="grid9">
+            <section id="grid9" class="grid_item">
+                <h3 id="recording">Audio Recording</h3>
                 <audio controls>
                     <source src="music.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
