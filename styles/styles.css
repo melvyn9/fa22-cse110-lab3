@@ -67,6 +67,11 @@ li {
 }
 
 /* NavBar Styling */
+header {
+    position: fixed;
+    top: 0;
+}
+
 nav > ul{
     display: flex;
     flex-direction: row;
@@ -93,6 +98,7 @@ nav > ul{
 
 /* Main Styling */
 main {
+    margin-top: 15%;
     border-style: solid;
     border-color: var(--headerColor);
     border-width: thick;
@@ -218,14 +224,22 @@ video {
 
 /* Form Styling */
 form {
+    display: flex;
+    justify-content: center;
     margin-top: 2%;
 }
+
 form > * {
+    margin: 2%;
     padding: 2%;
 }
 
 [attribute=form_border] {
     border-color: var(--headerColor);
+}
+
+fieldset > * {
+    padding: 5%;
 }
 
 legend > * {
@@ -234,6 +248,7 @@ legend > * {
 
 legend ~ label {
     font-weight: bold;
+    display: block;
 }
 
 input[type=text] {
@@ -241,9 +256,28 @@ input[type=text] {
     margin: 2% 2% 2% 0;
  }
 
+ textarea {
+    max-width: 100px;
+    max-height: 100px;
+ }
  textarea + button {
     padding: 2%;
     border-radius: 50%;
     border-color: var(--headerColor);
     background-color: transparent;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 10px;
  }
+
+ /* Footer Styling */
+#footer_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer_nav > li {
+    list-style: none;
+}
