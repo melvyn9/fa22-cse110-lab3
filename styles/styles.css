@@ -12,7 +12,6 @@
     --fontColor: hsl(300,4,14);
     --headerColor: rgb(0,153,51);
     --linkColor: #D5F9DE;
-    /* Font Sizes */
 }
 
 /* Custom Font */
@@ -268,7 +267,7 @@ input[type=text] {
     display: block;
     margin: auto;
     position: relative;
-    top: 10px;
+    top: 1rem;
  }
 
  /* Footer Styling */
